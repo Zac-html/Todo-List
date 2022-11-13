@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00ced1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 500px;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  color: #111111;
+}
+
+.todos {
+  margin-top: 2em;
+}
+.todo {
+  border-left: 4px solid #00ced1;
+  padding: 5px;
+  color: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.delete {
+  color: #00ced1;
+  cursor: pointer;
+}
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 35%;
+    min-height: 35%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    border-radius: 8px;
+    background: #066acd;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#newtask {
+  position: relative;
+  padding: 30px 15px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#newtask input {
+  border-radius: 5px;
+  width: 70%;
+  height: 45px;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  position: relative;
+}
+
+#newtask input:focus {
+  outline: none;
+  border-color: #19A68C;
+}
+
+#newtask button {
+  position: relative;
+  float: right;
+  width: 70px;
+  height: 45px;
+  border-radius: 3px;
+  font-size: 16px;
+  background: #19A68C;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#tasks {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+.task {
+  background: #fff;
+  height: 50px;
+  padding: 5px 10px;
+  border-radius: 0px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 2px solid #d1d3d4;
+}
+
+.task span {
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.task button {
+  border: none;
+  height: 100%;
+  width: 400px;
+  background: #19A68C;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+} */
+
+/* h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+}
+
+.todo-form {
+  position: relative;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Note for portfolio Contact input border */
+/* .todo-input {
+  width: 75%;
+  height: 45px;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+}
+
+.add-btn {
+  background: #1053ba;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+}
+
+.file-list {
+  padding: 20px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.todo-items {
+  min-width: none;
+}
+
+.todo-form input:focus {
+  outline: none;
+  border-color: #0d75ec;
+}
+
+.todo-form button{
+  position: relative;
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0d75ec;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.todo-form button:hover {
+  color: #fff;
+}
+
+#tasks{
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 10px;
+}
+
+.task{
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #939697;
+  cursor: pointer;
+  background-color: #c5e1e6;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+}
+.task span{
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+ */ 
